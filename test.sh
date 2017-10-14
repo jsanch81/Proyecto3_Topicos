@@ -1,11 +1,11 @@
 #!/bin/bash
 
-#SBATCH --job-name=mpi
-#SBATCH --output=output.txt
-#SBATCH --time=00:01:60
-#SBATCH --partition=estudiantes
-#SBATCH --ntasks=10
-
+#SBATCH --time=00:00:20
+#SBATCH --nodes=4
+# Memory per node specification is in MB. It is optional.
+# The default limit is 3000MB per core.
+#SBATCH --job-name="hello_test"
+#SBATCH --output=test-srun.out
 
 
 mpirun -np 4 python ./paralelo.py data2/

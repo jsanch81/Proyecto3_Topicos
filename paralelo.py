@@ -1,7 +1,6 @@
 import operator, os, sys, re, collections
 import time
 import numpy as np
-import pylab as plt
 from mpi4py import MPI
 comm = MPI.COMM_WORLD
 sendbuf = []
