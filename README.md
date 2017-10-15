@@ -46,7 +46,7 @@ Para la ejecución del programa serial es necesario tener instalado la versión 
 sus correspondientes dependencias, además de tener instaladas todas las bibliotecas utilizadas
 en el proyecto. La ejecución se realiza de la siguiente manera.
 
-`python3 serial.py Datasets/`
+`python3 serial.py Datasets/ > salidaSerial.txt`
 
 Donde Datasets puede ser cualquier directorio, el cual va a contener los archivos
 que serán analizados, que en este caso son .txt
@@ -57,7 +57,7 @@ de tener instalado openmpi en su computadora como también la biblioteca mpi4py,
 que se estén utilizando. Para el paralelo existen dos maneras de ejecución:
 #### Ejecución por línea de comandos:
 
-`mpiexec -n 4 python3 paralelo.py Datasets/`
+`mpiexec -n 4 python3 paralelo.py Datasets/ > salidaParalelo.txt`
 
 En este caso su ejecución es diferente al serial, ya que se está ejecutando
 con `mpiexec`, el cual me va a ejecutar el programa en paralelo con el número de nucleas
@@ -80,7 +80,7 @@ datos:
 #SBATCH --job-name="hello_test"
 #SBATCH --output=test-srun.out
 
-mpiexec -np 2 python ./paralelo.py folder/
+mpiexec -np 2 python ./paralelo.py folder/ > salidaParalelo.txt
 ```
 Donde configuras el tiempo promedio que podría tardar la
 ejecución del programa, el número de nodos, el nombre del
