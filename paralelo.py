@@ -1,7 +1,6 @@
 import operator, os, sys, re, collections
 import time
 import numpy as np
-import pylab as plt
 from mpi4py import MPI
 comm = MPI.COMM_WORLD
 sendbuf = []
@@ -181,7 +180,7 @@ def Kmeans(matrizFinal,k,maxIters = 10,):
 
 if __name__ == '__main__':
     timeini = time.time()
-    k = 4
+    k = 2
     rootDir = sys.argv[1]
     T = []
     Ttemp=[]
