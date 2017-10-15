@@ -7,7 +7,7 @@
 
 ## Créditos
 
-K-menas fue  un código reutilizado de internet, el cual pueden encontrar en el siguiente link, [k-means](https://gist.github.com/bistaumanga/6023692 "k-me") y jaccard fue implementado gracias a el algoritmo encontrado en el siquiente link.
+K-menas fue  un código reutilizado de internet, el cual pueden encontrar en el siguiente link, [k-means](https://gist.github.com/bistaumanga/6023692 "k-me") y jaccard fue implementado gracias a el algoritmo encontrado en el siquiente link [jaccard](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.332.4480&rep=rep1&type=pdf).
 
 ## Instalaciones
 
