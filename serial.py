@@ -57,6 +57,9 @@ stopwordsman = ["a", "able", "about", "above", "according", "accordingly", "acro
                  "with", "within", "without", "wonder", "would", "would", "x", "y", "yes", "yet", "you", "your",
                  "yours", "yourself", "yourselves", "z", "zero","ii"]
 
+# El método retorna un diccionario con las palabras y la ocurrencia de estas, eliminando
+# las palabras que no son importantes.
+# El diccionario contienen las palabras de todos los documentos.
 def getOcurrence(rootDir):
     ocurrenceFile = []
     dictFiles={}
@@ -136,38 +139,48 @@ def jaccard(x, y):
         sumMax+=max(x[i],y[i])
     return sumMin/sumMax
 
+# Retorna un array con los centrosides dependiendo del K recibida,
+# un array con los gurpos y otro con los nombres de los documentos
+# en su respectivo grupo.
+# Este código fue implementado gracias a ......
 def kMeans(fdt,X, K, maxIters=6, plot_progress=None):
     grupo = []
+    # Elige toda una fila de la respectiva matriz X, la cual será un centroids.
     centroids = X[np.random.choice(np.arange(len(X)), K), :]
     for i in range(maxIters):
-        # Esta parte asigna el closter o el grupo al que pertenece cada socumento
+        # Esta parte asigna el closter o el grupo al que pertenece cada documento.
         C = np.array([np.argmin([np.dot(x_i - y_k, x_i - y_k) for y_k in centroids]) for x_i in X])
         # Calcula los nuevos centroides, a partir de los agrupamientos de c
-        # saca sus promedios
+        # saca sus promedios.
         centroids = [X[C == k].mean(axis=0) for k in range(K)]
     #inicializo un arreglo de arreglos con K arreglos.
     for i in range(K):
         grupo.insert(i,[])
     listFiles=list(fdt.keys())
     cont=0
-    #Añado el nombre del documento al grupo que le corresponde
+    # Se añade el nombre del documento al grupo que le corresponde.
     for i in C:
         grupo[i].append(listFiles[cont])
         cont+=1
+    print(C)
+    print(np.array(centroids))
     return np.array(centroids), C, grupo
 
-
+# El main, se encarga de llamar a todos los metodos y por último imprimir su resultados.
 if __name__ == '__main__':
     timeini = time.time()
+    # K, el numero de grupos en los que quiero dividir los documentos.
     k = 2
     rootDir = sys.argv[1]
     ocurrenceFile = getOcurrence(rootDir)
+    # Dict con el nombre del documento y la ocurrecncia de palabras.
     fdt = ft(ocurrenceFile)
+    # Matriz que contiene la distacia entre los documentos.
     matrizJaccard = preJaccard(fdt)
-
+    # Los centroides, el array de los gurpos y de los grupos con su nombre.
     centroides, finalList, grupo = kMeans(fdt,matrizJaccard, k)
     finalTime= time.time() - timeini
-
+    # Imprime los resultados.
     cont=0
     for i in grupo:
         print("Closter numero ",cont,":")
