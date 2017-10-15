@@ -2,11 +2,24 @@
 
 ## Autores
   *Jose David Sánchez Castrillón* _jsach81@eafit.edu.co_
-  
+
   *Mayerli Andrea López Galeano* _mlopez12@eafit.edu.co_
 
 ## Créditos
 
 ## Instalaciones
+
+  * mpi4py
+
+  * numpy
+
+  * re
+
+  * os
+
+  * slurm
+  
+
+
 
 ## Ejecución
