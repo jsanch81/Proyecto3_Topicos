@@ -7,10 +7,16 @@
 
 ## Créditos
 
+K-menas fue  un código reutilizado de internet, el cual pueden encontrar en el siguiente link, [k-means](https://gist.github.com/bistaumanga/6023692 "k-me") y jaccard fue implementado gracias a el algoritmo encontrado en el siquiente link.
+
 ## Instalaciones
 
   Para la implementación de este proyecto fue necesaria la intalación de mpi4py, numpy y slurm
 
+  ### Open MPI
+  ```
+  $ sudo apt-get install openmpi-bin
+  ```
   ### mpi4py
   Es esencial para la implementación en paralelo.
   ```
@@ -27,7 +33,7 @@
   $ sudo apt-get install python3-numpy
   ```
   ### slurm
-  Es un sitema de gestion de recursos. 
+  Es un sitema de gestion de recursos.
   ```
   $ sudo apt-get install slurm
   ```
