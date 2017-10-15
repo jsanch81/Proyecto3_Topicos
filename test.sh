@@ -1,4 +1,5 @@
 #!/bin/bash
+
 #SBATCH --time=00:00:20
 #SBATCH --nodes=4
 # Memory per node specification is in MB. It is optional.

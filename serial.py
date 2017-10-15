@@ -57,88 +57,84 @@ stopwordsman = ["a", "able", "about", "above", "according", "accordingly", "acro
                  "with", "within", "without", "wonder", "would", "would", "x", "y", "yes", "yet", "you", "your",
                  "yours", "yourself", "yourselves", "z", "zero","ii"]
 
-def getT(rootDir):
-    T = []
-    mapFiles={}
+def getOcurrence(rootDir):
+    ocurrenceFile = []
+    dictFiles={}
     filesOrganized = []
     filesOrganized = list(os.walk(rootDir))[0][2]
     for i in filesOrganized:
-        mapFiles[os.stat(rootDir+i).st_size]=i
+        dictFiles[os.stat(rootDir+i).st_size]=i
 
-    sort = sorted(mapFiles.keys())[::-1]
+    sort = sorted(dictFiles.keys())[::-1]
     for cont in range(len(sort)):
-
-        file = open(rootDir + mapFiles[sort[cont]], 'r')
-
-        mainwords = []
-
-            # print(str(archivo))
-
+        file = open(rootDir + dictFiles[sort[cont]], 'r')
+        ocurrenceWords = []
         for line in file:
             line = patron.sub(" ",line.strip().lower())
             for word in line.split():
                 if word not in stopwordsman:
-                    mainwords.append(word)
+                    ocurrenceWords.append(word)
         file.close()
-        sorted_mainwords = collections.Counter(mainwords).most_common(10)
-
-        #finalwords = list(sorted_mainwords
-        finalwords =[]
+        # Se obtienen una tupla con las palabras más frecuentes.
+        sorted_ocurrenceWords = collections.Counter(ocurrenceWords).most_common(10)
+        frequentWords =[]
         for i in range(10):
-            finalwords.append(sorted_mainwords[i][0])
+            # Se obtiene las palabras más frecuentes.
+            frequentWords.append(sorted_ocurrenceWords[i][0])
         #Se hace la union entre todos los elementos para evitar repetir.
-        T=list(set(T).union(set(finalwords)))
-    return T
+        ocurrenceFile = list(set(ocurrenceFile).union(set(frequentWords)))
+    return ocurrenceFile
 
-
-# Devuelve mapa con los resultados de ft(d,t)
-def ft(T):
-    mapa = {}
-    mapFiles={}
+# Devuelve dictionary con los resultados de ft(d,t)
+# Se crea un diccionario el cual contendrá el nombre de los documentos con las ocurrencia de
+# las palabras más frecuentes.
+def ft(ocurrenceFile):
+    dictionary = {}
+    dictFiles={}
     filesOrganized = []
     filesOrganized = list(os.walk(rootDir))[0][2]
     for i in filesOrganized:
-        mapFiles[os.stat(rootDir+i).st_size]=i
+        dictFiles[os.stat(rootDir+i).st_size]=i
 
-    sort = sorted(mapFiles.keys())[::-1]
+    sort = sorted(dictFiles.keys())[::-1]
     for cont in range(len(sort)):
-        result = []
-        for i in range(len(T)):
-            result.append(0)
-
-        file = open(rootDir + mapFiles[sort[cont]], 'r')
+        arrOcurrence = []
+        for i in range(len(ocurrenceFile)):
+            arrOcurrence.append(0)
+        # Lee el documento por orden de tamaño.
+        file = open(rootDir + dictFiles[sort[cont]], 'r')
         for line in file:
             line = patron.sub(" ",line.strip().lower())
             for word in line.split():
-                if word in T:
-                    result[T.index(word)] += 1
+                if word in ocurrenceFile:
+                    arrOcurrence[ocurrenceFile.index(word)] += 1
+        # Guarda el nombre del documento como la key y el array de las ocurrencias como el value.
+        dictionary[dictFiles[sort[cont]]] = arrOcurrence
 
-        mapa[mapFiles[sort[cont]]] = result
+    return dictionary
 
-    return mapa
-
-
+# Crea una matriz con el tamaño del diccionario de las ocurrencias de las palabras
+# la cual va llenando con la resta entre 1.0 y el resultado que me arroja el jaccard
+#
 def preJaccard(fdt):
-    tam = len(fdt)
-
-    matrixC = np.empty((tam, tam))
-
-    listaFiles = list(fdt.keys())
-
-    for i in range(tam):
-        for j in range(tam):
-            matrixC[i][j] = 1.0 - (jaccard(fdt[listaFiles[i]], fdt[listaFiles[j]]))
+    sizaDict = len(fdt)
+    matrixC = np.empty((sizaDict, sizaDict))
+    listFiles = list(fdt.keys())
+    for i in range(sizaDict):
+        for j in range(sizaDict):
+            matrixC[i][j] = 1.0 - (jaccard(fdt[listFiles[i]], fdt[listFiles[j]]))
 
     return matrixC
 
-
+# Obtiene la suma del mínimo y del máximo de las ocurrncias de las palabras en dos documentos
+# hace una división entre el sumMin y el sumMax
 def jaccard(x, y):
-    summin=0
-    summax=0
+    sumMin=0
+    sumMax=0
     for i in range(len(x)):
-        summin+=min(x[i],y[i])
-        summax+=max(x[i],y[i])
-    return summin/summax
+        sumMin+=min(x[i],y[i])
+        sumMax+=max(x[i],y[i])
+    return sumMin/sumMax
 
 def kMeans(fdt,X, K, maxIters=6, plot_progress=None):
     grupo = []
@@ -152,11 +148,11 @@ def kMeans(fdt,X, K, maxIters=6, plot_progress=None):
     #inicializo un arreglo de arreglos con K arreglos.
     for i in range(K):
         grupo.insert(i,[])
-    listaFiles=list(fdt.keys())
+    listFiles=list(fdt.keys())
     cont=0
     #Añado el nombre del documento al grupo que le corresponde
     for i in C:
-        grupo[i].append(listaFiles[cont])
+        grupo[i].append(listFiles[cont])
         cont+=1
     return np.array(centroids), C, grupo
 
@@ -165,8 +161,8 @@ if __name__ == '__main__':
     timeini = time.time()
     k = 2
     rootDir = sys.argv[1]
-    T = getT(rootDir)
-    fdt = ft(T)
+    ocurrenceFile = getOcurrence(rootDir)
+    fdt = ft(ocurrenceFile)
     #print("FDT: ", fdt)
 
     matrizJaccard = preJaccard(fdt)
