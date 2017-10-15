@@ -1,0 +1,421 @@
+Closter numero  0 :
+Documento:  William Wordsworth___The Prose Works of William Wordsworth.txt
+Documento:  Anthony Trollope___Can You Forgive Her?.txt
+Documento:  Anthony Trollope___The Eustace Diamonds.txt
+Documento:  Wilkie Collins___The Woman in White.txt
+Documento:  Anthony Trollope___The Duke's Children.txt
+Documento:  Anthony Trollope___Mr. Scarborough's Family.txt
+Documento:  Anthony Trollope___The Vicar of Bullhampton.txt
+Documento:  Anthony Trollope___The Way We Live Now.txt
+Documento:  Anthony Trollope___Orley Farm.txt
+Documento:  Anthony Trollope___Phineas Redux.txt
+Documento:  Anthony Trollope___Doctor Thorne.txt
+Documento:  Anthony Trollope___Ralph the Heir.txt
+Documento:  Anthony Trollope___Marion Fay.txt
+Documento:  Anthony Trollope___Barchester Towers.txt
+Documento:  Anthony Trollope___The Last Chronicle of Barset.txt
+Documento:  Anthony Trollope___The Prime Minister.txt
+Documento:  Anthony Trollope___Phineas Finn.txt
+Documento:  Wilkie Collins___Man and Wife.txt
+Documento:  Anthony Trollope___The Three Clerks.txt
+Documento:  Anthony Trollope___Is He Popenjoy?.txt
+Documento:  Anthony Trollope___John Caldigate.txt
+Documento:  Anthony Trollope___Castle Richmond.txt
+Documento:  Anthony Trollope___He Knew He Was Right.txt
+Documento:  Wilkie Collins___No Name.txt
+Documento:  Anthony Trollope___The Small House at Allington.txt
+Documento:  Anthony Trollope___The Bertrams.txt
+Documento:  Anthony Trollope___Ayala's Angel.txt
+Documento:  Anthony Trollope___Framley Parsonage.txt
+Documento:  Anthony Trollope___The American Senator.txt
+Documento:  Anthony Trollope___The Claverings.txt
+Documento:  Wilkie Collins___The Moonstone.txt
+----------------------------------------------------------------------------------------------------
+Closter numero  1 :
+Documento:  Andrew Lang___The Clyde Mystery.txt
+Documento:  Winston Churchill___A Traveller in War-Time.txt
+Documento:  Winston Churchill___An Essay On The American Contribution And The Democratic Idea.txt
+Documento:  Ambrose Bierce___Present at a Hanging and Other Ghost Stories.txt
+Documento:  Ambrose Bierce___A Cynic Looks at Life.txt
+Documento:  Andrew Lang___Much Darker Days.txt
+Documento:  William Butler Yeats___Stories of Red Hanrahan.txt
+Documento:  Andrew Lang___Andrew Lang's Introduction to The Compleat Angler.txt
+Documento:  Anthony Trollope___The Man Who Kept His Money In A Box.txt
+Documento:  William Makepeace Thackeray___A Little Dinner at Timmins's.txt
+Documento:  Aldous Huxley___The Defeat of Youth and Other Poems.txt
+Documento:  Anthony Trollope___Miss Sarah Jack, of Spanish Town, Jamaica.txt
+Documento:  Anthony Trollope___Mrs. General Talboys.txt
+Documento:  Anthony Trollope___Returning Home.txt
+Documento:  Anthony Trollope___The Relics of General Chasse.txt
+Documento:  Anthony Trollope___The O'Conors of Castle Conor from Tales from all Countries.txt
+Documento:  William Blake___Songs of Innocence and Songs of Experience.txt
+Documento:  Anthony Trollope___Hunting Sketches.txt
+Documento:  William Wordsworth___Poems in Two Volumes, Volume 2.txt
+Documento:  Andrew Lang___The Puzzle of Dickens's Last Plot.txt
+Documento:  Andrew Lang___The Gold Of Fairnilee.txt
+Documento:  Andrew Lang___Grass of Parnassus.txt
+Documento:  William Butler Yeats___In The Seven Woods.txt
+Documento:  Anthony Trollope___Aaron Trow.txt
+Documento:  Andrew Lang___Ban and Arriere Ban.txt
+Documento:  William Butler Yeats___Discoveries.txt
+Documento:  Anthony Trollope___John Bull on the Guadalquivir from Tales from all Countries.txt
+Documento:  Anthony Trollope___The Mistletoe Bough.txt
+Documento:  Anthony Trollope___George Walker At Suez.txt
+Documento:  William Blake___Poems of William Blake.txt
+Documento:  Sir Walter Scott___Trial of Duncan Terig.txt
+Documento:  Andrew Lang___Prince Prigio.txt
+Documento:  Anthony Trollope___A Ride Across Palestine.txt
+Documento:  William Butler Yeats___Per Amica Silentia Lunae.txt
+Documento:  Anthony Trollope___La Mere Bauche from Tales of All Countries.txt
+Documento:  Anthony Trollope___The Courtship of Susan Bell.txt
+Documento:  Anthony Trollope___An Unprotected Female at the Pyramids.txt
+Documento:  William Butler Yeats___Synge And The Ireland Of His Time.txt
+Documento:  Anthony Trollope___The House of Heine Brothers, in Munich.txt
+Documento:  Andrew Lang___How to Fail in Literature.txt
+Documento:  Andrew Lang___New Collected Rhymes.txt
+Documento:  Sir Walter Scott___The Tapestried Chamber, and Death of the Laird's Jock.txt
+Documento:  Ambrose Bierce___The Parenticide Club.txt
+Documento:  Abraham Lincoln___State of the Union Addresses.txt
+Documento:  Alfred Russel Wallace___Is Mars Habitable?.txt
+Documento:  Arnold Joseph Toynbee___Turkey: A Past and a Future.txt
+Documento:  Andrew Lang___Prince Prigio From "His Own Fairy Book".txt
+Documento:  William Wordsworth___Poems in Two Volumes, Volume 1.txt
+Documento:  Andrew Lang___He.txt
+Documento:  Ambrose Bierce___Write It Right.txt
+Documento:  Andrew Lang___Rhymes a la Mode.txt
+Documento:  Andrew Lang___Ballads in Blue China and Verses and Translations.txt
+Documento:  Anthony Trollope___The Parson's Daughter of Oxney Colne.txt
+Documento:  William Dean Howells___The White Mr. Longfellow.txt
+Documento:  Alexander Pope___An Essay on Criticism.txt
+Documento:  Anthony Trollope___The Chateau of Prince Polignac.txt
+Documento:  William Butler Yeats___Rosa Alchemica.txt
+Documento:  Ambrose Bierce___A Son of the Gods, and A Horseman in the Sky.txt
+----------------------------------------------------------------------------------------------------
+Closter numero  2 :
+Documento:  William Makepeace Thackeray___Barry Lyndon.txt
+Documento:  Andrew Lang___A Monk of Fife.txt
+Documento:  William Henry Hudson___The Purple Land.txt
+Documento:  Andrew Lang___The Orange Fairy Book.txt
+Documento:  Andrew Lang___The Crimson Fairy Book.txt
+Documento:  Wilkie Collins___The Two Destinies.txt
+Documento:  William Somerset Maugham___The Moon and Sixpence.txt
+Documento:  William Henry Hudson___A Traveller in Little Things.txt
+Documento:  Andrew Lang___The Blue Fairy Book.txt
+Documento:  Baronness Orczy___El Dorado.txt
+Documento:  Anthony Trollope___Autobiography of Anthony Trollope.txt
+Documento:  Andrew Lang___The Book of Dreams and Ghosts.txt
+Documento:  William Henry Hudson___Afoot in England.txt
+Documento:  William Somerset Maugham___The Explorer.txt
+Documento:  William Somerset Maugham___The Magician.txt
+Documento:  William Somerset Maugham___The Making of a Saint.txt
+Documento:  Anthony Trollope___An Old Man's Love.txt
+Documento:  Anthony Trollope___An Eye for an Eye.txt
+Documento:  William Dean Howells___Venetian Life.txt
+Documento:  William Henry Hudson___Far Away and Long Ago.txt
+Documento:  Andrew Lang___The Grey Fairy Book.txt
+Documento:  Andrew Lang___The Pink Fairy Book.txt
+Documento:  William Somerset Maugham___The Trembling of a Leaf.txt
+Documento:  William Somerset Maugham___The Hero.txt
+Documento:  Anthony Trollope___The Golden Lion of Granpere.txt
+Documento:  Andrew Lang___The Red Fairy Book.txt
+Documento:  Andrew Lang___The Arabian Nights Entertainments.txt
+Documento:  Andrew Lang___The Yellow Fairy Book.txt
+Documento:  Andrew Lang___The Violet Fairy Book.txt
+Documento:  Andrew Lang___The Lilac Fairy Book.txt
+Documento:  Andrew Lang___The Brown Fairy Book.txt
+Documento:  Zane Grey___The Day of the Beast.txt
+Documento:  William Henry Hudson___Green Mansions.txt
+Documento:  Baronness Orczy___A Bride of the Plains.txt
+Documento:  William Henry Hudson___A Shepherd's Life.txt
+----------------------------------------------------------------------------------------------------
+Closter numero  3 :
+Documento:  William Wymark Jacobs___The Changing Numbers, Odd Craft, Part 8.txt
+Documento:  William Wymark Jacobs___Lady of the Barge, Lady of the Barge and Others, Part 1.txt
+Documento:  William Wymark Jacobs___The Constable's Move, Captains All, Book 4.txt
+Documento:  William Wymark Jacobs___Establishing Relations, Odd Craft, Part 7.txt
+Documento:  William Wymark Jacobs___Friends In Need, Ship's Company, Part 2.txt
+Documento:  William Wymark Jacobs___The Toll-House, Sailor's Knots, Part 7.txt
+Documento:  William Wymark Jacobs___Stepping Backwards, Night Watches, Part 5.txt
+Documento:  William Wymark Jacobs___The Madness of Mr. Lister, Captains All, Book 9.txt
+Documento:  William Dean Howells___The Sleeping Car.txt
+Documento:  William Wymark Jacobs___The Boatswain's Mate, Captains All, Book 2.txt
+Documento:  William Wymark Jacobs___The Convert, Deep Waters, Part 5.txt
+Documento:  William Wymark Jacobs___The Temptation of Samuel Burge, Captains All, Book 8.txt
+Documento:  William Wymark Jacobs___Striking Hard, Deep Waters, Part 10.txt
+Documento:  William Wymark Jacobs___The Old Man of the Sea, Ship's Company, Part 11.txt
+Documento:  William Wymark Jacobs___The Weaker Vessel, Night Watches, Part 4.txt
+Documento:  William Wymark Jacobs___Matrimonial Openings, Sailor's Knots, Part 5.txt
+Documento:  William Wymark Jacobs___Dual Control, Ship's Company, Part 8.txt
+Documento:  William Wymark Jacobs___In The Library, The Lady of the Barge and Others, Part 6.txt
+Documento:  William Wymark Jacobs___The Vigil, Night Watches, Part 8.txt
+Documento:  William Wymark Jacobs___The Head of The Family, Sailor's Knots, Part 9.txt
+Documento:  William Wymark Jacobs___Lawyer Quince, Odd Craft, Part 5.txt
+Documento:  William Wymark Jacobs___Fine Feathers, Ship's Company, Part 1.txt
+Documento:  William Wymark Jacobs___The Bequest, Ship's Company, Part 6.txt
+Documento:  William Wymark Jacobs___Double Dealing, Sailor's Knots, Part 11.txt
+Documento:  William Wymark Jacobs___Three at Table, The Lady of the Barge and Others, Part 12.txt
+Documento:  William Wymark Jacobs___The Castaway, Odd Craft, Part 2.txt
+Documento:  William Wymark Jacobs___The Well, The Lady of the Barge and Others, Part 4.txt
+Documento:  William Wymark Jacobs___Homeward Bound, Sailor's Knots, Part 2.txt
+Documento:  William Wymark Jacobs___Sentence Deferred, Sailor's Knots, Part 4.txt
+Documento:  William Wymark Jacobs___The Monkey's Paw, The Lady of the Barge and Others, Part 2.txt
+Documento:  William Wymark Jacobs___Fairy Gold, Ship's Company, Part 4.txt
+Documento:  William Wymark Jacobs___For Better or Worse, Ship's Company, Part 10.txt
+Documento:  William Wymark Jacobs___Family Cares, Deep Waters, Part 7.txt
+Documento:  William Wymark Jacobs___Made to Measure, Deep Waters, Part 3.txt
+----------------------------------------------------------------------------------------------------
+Closter numero  4 :
+Documento:  William Henry Hudson___Fan.txt
+Documento:  Winston Churchill___The Crisis, Complete.txt
+Documento:  Wilkie Collins___Poor Miss Finch.txt
+Documento:  Anthony Trollope___The Belton Estate.txt
+Documento:  Anthony Trollope___Lady Anna.txt
+Documento:  Wilkie Collins___Heart and Science.txt
+Documento:  William Dean Howells___The Rise of Silas Lapham.txt
+Documento:  Wilkie Collins___I Say No.txt
+Documento:  Wilkie Collins___The Legacy of Cain.txt
+Documento:  Wilkie Collins___The Evil Genius.txt
+Documento:  Winston Churchill___The Crossing.txt
+Documento:  Winston Churchill___Richard Carvel, Complete.txt
+Documento:  Winston Churchill___The Inside of the Cup, Complete.txt
+Documento:  Winston Churchill___Mr. Crewe's Career, Complete.txt
+Documento:  Wilkie Collins___Hide and Seek.txt
+Documento:  Wilkie Collins___Little Novels.txt
+Documento:  Anthony Trollope___Rachel Ray.txt
+Documento:  Anthony Trollope___The Kellys and the O'Kellys.txt
+Documento:  Winston Churchill___A Far Country, Complete.txt
+Documento:  Winston Churchill___A Modern Chronicle, Complete.txt
+Documento:  William Makepeace Thackeray___Burlesques.txt
+Documento:  Winston Churchill___The Dwelling Place of Light, Complete.txt
+Documento:  Wilkie Collins___The Queen of Hearts.txt
+Documento:  Wilkie Collins___The Law and the Lady.txt
+Documento:  Wilkie Collins___The New Magdalen.txt
+Documento:  Anthony Trollope___La Vendée.txt
+Documento:  Winston Churchill___Coniston, Complete.txt
+Documento:  Anthony Trollope___The Macdermots of Ballycloran.txt
+Documento:  William Dean Howells___Their Silver Wedding Journey.txt
+Documento:  Anthony Trollope___The Landleaguers.txt
+Documento:  Anthony Trollope___Miss Mackenzie.txt
+Documento:  Wilkie Collins___The Fallen Leaves.txt
+Documento:  Wilkie Collins___Jezebel's Daughter.txt
+----------------------------------------------------------------------------------------------------
+Closter numero  5 :
+Documento:  Alexander Pope___The Works of Alexander Pope, Volume 1.txt
+Documento:  Alfred Russel Wallace___Darwinism.txt
+Documento:  William Wordsworth___The Poetical Works of William Wordsworth, Volume 3.txt
+Documento:  Anthony Trollope___North America Volume 1.txt
+Documento:  Baronness Orczy___"Unto Caesar".txt
+Documento:  Zane Grey___Riders of the Purple Sage.txt
+Documento:  Zane Grey___Betty Zane.txt
+Documento:  Zane Grey___The Mysterious Rider.txt
+Documento:  Zane Grey___The Spirit of the Border.txt
+Documento:  Zane Grey___Valley of Wild Horses.txt
+Documento:  William J Long___English Literature.txt
+Documento:  Anthony Trollope___North America Volume 2.txt
+Documento:  Andrew Lang___The Making of Religion.txt
+Documento:  Zane Grey___Tales of lonely trails.txt
+Documento:  Zane Grey___The Desert of Wheat.txt
+Documento:  Alfred Russel Wallace___The Malay Archipelago, Volume 1.txt
+Documento:  Alfred Russel Wallace___The Malay Archipelago, Volume 2.txt
+Documento:  William Henry Hudson___The Naturalist in La Plata.txt
+Documento:  Zane Grey___Wildfire.txt
+Documento:  Zane Grey___To the Last Man.txt
+Documento:  Zane Grey___The Border Legion.txt
+Documento:  Zane Grey___The Rustlers of Pecos County.txt
+Documento:  William Wymark Jacobs___Odd Craft.txt
+Documento:  William J Long___Outlines of English and American Literature.txt
+Documento:  Sir Walter Scott___The Talisman.txt
+Documento:  Anthony Trollope___Life of Cicero Volume Two.txt
+Documento:  William Wordsworth___The Poetical Works of William Wordsworth, Volume 1.txt
+Documento:  Anthony Trollope___Life of Cicero Volume One.txt
+Documento:  Zane Grey___The Man of the Forest.txt
+Documento:  Andrew Lang___The Disentanglers.txt
+Documento:  Zane Grey___Desert Gold.txt
+Documento:  Zane Grey___The Rainbow Trail.txt
+Documento:  Andrew Lang___Tales of Troy and Greece.txt
+Documento:  Agatha Christie___The Secret Adversary.txt
+Documento:  Zane Grey___The Last of the Plainsmen.txt
+Documento:  William Wymark Jacobs___Ship's Company.txt
+Documento:  William Wordsworth___The Poetical Works of William Wordsworth, Volume 2.txt
+Documento:  Zane Grey___The U.P. Trail.txt
+Documento:  Zane Grey___The Light of Western Stars.txt
+Documento:  Abraham Lincoln___The Writings of Abraham Lincoln, Volume 5: 1858-1862.txt
+Documento:  Zane Grey___The Lone Star Ranger.txt
+Documento:  Zane Grey___The Heritage of the Desert.txt
+Documento:  Zane Grey___The Call of the Canyon.txt
+Documento:  Zane Grey___The Last Trail.txt
+----------------------------------------------------------------------------------------------------
+Closter numero  6 :
+Documento:  Alfred Russel Wallace___Island Life.txt
+Documento:  William Dean Howells___The Standard Household-Effect Company.txt
+Documento:  Abraham Lincoln___Lincoln's First Inaugural Address.txt
+Documento:  William Wymark Jacobs___The Three Sisters, Night Watches, Part 6.txt
+Documento:  Abraham Lincoln___Lincoln Letters.txt
+Documento:  Albert Einstein___Relativity: The Special and General Theory.txt
+Documento:  Ambrose Bierce___An Occurrence at Owl Creek Bridge.txt
+Documento:  William Wymark Jacobs___Over The Side, Captains All, Book 6.txt
+Documento:  Abraham Lincoln___Lincoln's Second Inaugural Address.txt
+Documento:  William Ewart Gladstone___On Books and the Housing of Them.txt
+Documento:  William Butler Yeats___Seven Poems and a Fragment.txt
+Documento:  Ambrose Bierce___The Damned Thing.txt
+Documento:  Abraham Lincoln___The Emancipation Proclamation.txt
+Documento:  Albert Einstein___Sidelights on Relativity.txt
+Documento:  Abraham Lincoln___The Life and Public Service of General Zachary Taylor: An Address.txt
+Documento:  William Butler Yeats___Mosada.txt
+Documento:  William Blake___Illustrations of The Book of Job.txt
+Documento:  Abraham Lincoln___Lincoln's Gettysburg Address, given November 19, 1863.txt
+----------------------------------------------------------------------------------------------------
+Closter numero  7 :
+Documento:  William Wymark Jacobs___The Third String, Odd Craft, Part 12.txt
+Documento:  William Wymark Jacobs___The White Cat, Captains All, Book 10.txt
+Documento:  William Wymark Jacobs___The Nest Egg, Captains All, Book 3.txt
+Documento:  William Wymark Jacobs___Watch-Dogs, Ship's Company, Part 5.txt
+Documento:  William Wymark Jacobs___Skilled Assistance, Ship's Company, Part 9.txt
+Documento:  William Wymark Jacobs___His Other Self, Night Watches, Part 10.txt
+Documento:  William Wymark Jacobs___Dirty Work, Deep Waters, Part 11.txt
+Documento:  William Wymark Jacobs___The Substitute, Deep Waters, Part 9.txt
+Documento:  William Wymark Jacobs___Prize Money, Sailor's Knots, Part 10.txt
+Documento:  William Wymark Jacobs___Manners Makyth Man, Ship's Company, Part 12.txt
+Documento:  William Wymark Jacobs___Sam's Ghost, Deep Waters, Part 4.txt
+Documento:  William Wymark Jacobs___The Unknown, Night Watches, Part 7.txt
+Documento:  William Wymark Jacobs___Husbandry, Deep Waters, Part 6.txt
+Documento:  William Wymark Jacobs___Odd Charges, Odd Craft, Part 13.txt
+Documento:  William Wymark Jacobs___Shareholders, Deep Waters, Part 1.txt
+Documento:  William Wymark Jacobs___Peter's Pence, Sailor's Knots, Part 8.txt
+Documento:  William Wymark Jacobs___The Guardian Angel, Ship's Company, Part 7.txt
+Documento:  William Wymark Jacobs___Good Intentions, Ship's Company, Part 3.txt
+Documento:  William Wymark Jacobs___Four Pigeons, Captains All, Book 7.txt
+Documento:  William Wymark Jacobs___Self-Help, Sailor's Knots, Part 4.txt
+Documento:  William Wymark Jacobs___Keeping Up Appearances, Sailor's Knots, Part 12.txt
+Documento:  William Wymark Jacobs___Keeping Watch, Night Watches, Part 2.txt
+Documento:  William Wymark Jacobs___The Persecution of Bob Pretty, Odd Craft, Part 9.txt
+Documento:  William Wymark Jacobs___The Money Box, Odd Craft, Part 1.txt
+Documento:  William Wymark Jacobs___Dixon's Return, Odd Craft, Part 10.txt
+Documento:  William Wymark Jacobs___Odd Man Out, Sailor's Knots, Part 6.txt
+Documento:  William Wymark Jacobs___Easy Money, Night Watches, Part 9.txt
+Documento:  William Wymark Jacobs___The Understudy, Night Watches, Part 3.txt
+Documento:  William Wymark Jacobs___Paying Off, Deep Waters, Part 2.txt
+----------------------------------------------------------------------------------------------------
+Closter numero  8 :
+Documento:  Andrew Lang___Historical Mysteries.txt
+Documento:  Ambrose Bierce___The Collected Works of Ambrose Bierce, Volume 1.txt
+Documento:  Anthony Trollope___Dr. Wortle's School.txt
+Documento:  Anthony Trollope___Nina Balatka.txt
+Documento:  Anthony Trollope___Kept in the Dark.txt
+Documento:  William Wymark Jacobs___Many Cargoes.txt
+Documento:  Anthony Trollope___The Struggles of Brown, Jones, and Robinson.txt
+Documento:  Anthony Trollope___Cousin Henry.txt
+Documento:  Anthony Trollope___The Fixed Period.txt
+Documento:  Anthony Trollope___Thackeray.txt
+Documento:  Ambrose Bierce___Can Such Things Be?.txt
+Documento:  Andrew Lang___Essays in Little.txt
+Documento:  Andrew Lang___The Mark Of Cain.txt
+Documento:  Winston Churchill___The Celebrity, Complete.txt
+Documento:  Wilkie Collins___My Lady's Money.txt
+Documento:  Ambrose Bierce___Black Beetles in Amber.txt
+Documento:  Zane Grey___The Young Forester.txt
+Documento:  William Butler Yeats___Poems.txt
+Documento:  William Henry Hudson___Dead Man's Plack and an Old Thorn.txt
+Documento:  Andrew Lang___Myth, Ritual, and Religion, Vol. 1.txt
+Documento:  Andrew Lang___Cock Lane and Common-Sense.txt
+Documento:  William Wordsworth___The Poetical Works of William Wordsworth, Volume 4.txt
+Documento:  Abraham Lincoln___Speeches and Letters of Abraham Lincoln, 1832-1865.txt
+Documento:  Abraham Lincoln___The Writings of Abraham Lincoln, Volume 2: 1843-1858.txt
+Documento:  Andrew Lang___Pickle the Spy.txt
+Documento:  William Dean Howells___Their Wedding Journey.txt
+Documento:  William Henry Hudson___Birds and Man.txt
+Documento:  Baronness Orczy___I Will Repay.txt
+Documento:  Baronness Orczy___Castles in the Air.txt
+Documento:  Wilkie Collins___The Haunted Hotel.txt
+Documento:  Aldous Huxley___Crome Yellow.txt
+Documento:  Andrew Lang___In the Wrong Paradise.txt
+Documento:  Ambrose Bierce___Cobwebs From an Empty Skull.txt
+Documento:  William Somerset Maugham___The Land of The Blessed Virgin; Sketches and Impressions in Andalusia.txt
+Documento:  William Wymark Jacobs___Short Cruises.txt
+Documento:  Alexander Pope___Essay on Man.txt
+Documento:  Wilkie Collins___The Guilty River.txt
+Documento:  Anthony Trollope___Harry Heathcote of Gangoil.txt
+Documento:  Andrew Lang___Myth, Ritual And Religion, Vol. 2 (of 2).txt
+Documento:  Alexander Pope___The Poetical Works of Alexander Pope, Volume 1.txt
+Documento:  Andrew Lang___The Valet's Tragedy and Other Stories.txt
+Documento:  Andrew Lang___Custom and Myth.txt
+Documento:  Abraham Lincoln___The Writings of Abraham Lincoln, Volume 1: 1832-1843.txt
+Documento:  Anthony Trollope___Linda Tressel.txt
+Documento:  Ambrose Bierce___The Devil's Dictionary.txt
+Documento:  William Dean Howells___The Story of a Play.txt
+Documento:  Ambrose Bierce___The Shadow On The Dial, and Other Essays.txt
+Documento:  William Henry Hudson___A Crystal Age.txt
+Documento:  Agatha Christie___The Mysterious Affair at Styles.txt
+Documento:  Ambrose Bierce___Shapes of Clay.txt
+Documento:  William Wymark Jacobs___More Cargoes.txt
+Documento:  William Butler Yeats___The Celtic Twilight.txt
+Documento:  Alexander Pope___The Poetical Works of Alexander Pope, Volume 2.txt
+Documento:  Ambrose Bierce___The Collected Works of Ambrose Bierce, Volume 2.txt
+Documento:  Andrew Lang___Adventures among Books.txt
+Documento:  Anthony Trollope___The Warden.txt
+Documento:  Ambrose Bierce___The Collected Works of Ambrose Bierce, Volume 8.txt
+Documento:  Sir Walter Scott___The Surgeon's Daughter.txt
+Documento:  Anthony Trollope___Sir Harry Hotspur of Humblethwaite.txt
+Documento:  William Dean Howells___Through the Eye of the Needle.txt
+Documento:  Wilkie Collins___Rambles Beyond Railways.txt
+Documento:  William Henry Hudson___Birds in Town and Village.txt
+Documento:  Alexander Pope___The Rape of the Lock and Other Poems.txt
+Documento:  William Wymark Jacobs___Salthaven.txt
+Documento:  Andrew Lang___Alfred Tennyson.txt
+Documento:  William Butler Yeats___Ideas of Good and Evil.txt
+Documento:  William Wymark Jacobs___Sea Urchins.txt
+Documento:  William Wymark Jacobs___Light Freights.txt
+Documento:  William Wymark Jacobs___The Lady of the Barge.txt
+Documento:  William Wymark Jacobs___The Skipper’s Wooing, and The Brown Man’s Servant.txt
+Documento:  Aldous Huxley___Mortal Coils.txt
+----------------------------------------------------------------------------------------------------
+Closter numero  9 :
+Documento:  Abraham Lincoln___The Writings of Abraham Lincoln, Volume 6: 1862-1863.txt
+Documento:  Abraham Lincoln___The Writings of Abraham Lincoln, Volume 7: 1863-1865.txt
+Documento:  William J Long___Ways of Wood Folk.txt
+Documento:  William J Long___Wood Folk at School.txt
+Documento:  Andrew Lang___Lost Leaders.txt
+Documento:  Andrew Lang___Sir Walter Scott and the Border Minstrelsy.txt
+Documento:  William J Long___Wilderness Ways.txt
+Documento:  Andrew Lang___Letters on Literature.txt
+Documento:  William Wordsworth___Lyrical Ballads, With Other Poems, 1800, Volume 1.txt
+Documento:  William Wordsworth___Lyrical Ballads, With Other Poems, 1800, Volume 2.txt
+Documento:  Andrew Lang___John Knox and the Reformation.txt
+Documento:  Abraham Lincoln___Lincoln's Inaugurals, Addresses and Letters (Selections).txt
+Documento:  William J Long___Secret of the Woods.txt
+Documento:  William Henry Hudson___A Little Boy Lost.txt
+Documento:  William Wymark Jacobs___Night Watches.txt
+Documento:  Wilkie Collins___Miss or Mrs.?.txt
+Documento:  William J Long___Northern Trails, Book 1.txt
+Documento:  Winston Churchill___Dr. Jonathan (A Play).txt
+Documento:  Andrew Lang___Helen of Troy.txt
+Documento:  William Butler Yeats___Four Years.txt
+Documento:  Andrew Lang___A Short History of Scotland.txt
+Documento:  Andrew Lang___James VI and the Gowrie Mystery.txt
+Documento:  Zane Grey___Tales of Fishes.txt
+Documento:  Andrew Lang___Shakespeare, Bacon and the Great Unknown.txt
+Documento:  Andrew Lang___Modern Mythology.txt
+Documento:  Zane Grey___The Young Pitcher.txt
+Documento:  Andrew Lang___A Collection of Ballads.txt
+Documento:  William Makepeace Thackeray___Ballads.txt
+Documento:  William J Long___A Little Brother to the Bear and other Animal Stories.txt
+Documento:  Andrew Lang___The Library.txt
+Documento:  Andrew Lang___Letters to Dead Authors.txt
+Documento:  Andrew Lang___Angling Sketches.txt
+Documento:  Andrew Lang___Old Friends - Essays in Epistolary Parody.txt
+Documento:  Ambrose Bierce___Fantastic Fables.txt
+Documento:  Wilkie Collins___The Frozen Deep.txt
+Documento:  Andrew Lang___Prince Ricardo of Pantouflia.txt
+Documento:  Wilkie Collins___The Dead Alive.txt
+Documento:  Alfred Russel Wallace___Contributions to the Theory of Natural Selection.txt
+Documento:  Andrew Lang___Homer and His Age.txt
+Documento:  Zane Grey___The Redheaded Outfield and Other Baseball Stories.txt
+Documento:  Abraham Lincoln___The Writings of Abraham Lincoln, Volume 3.txt
+Documento:  Ambrose Bierce___The Fiend's Delight.txt
+Documento:  Abraham Lincoln___The Writings of Abraham Lincoln, Volume 4.txt
+Documento:  Andrew Lang___Books and Bookmen.txt
+Documento:  Andrew Lang___Oxford.txt
+Documento:  William Butler Yeats___Reveries over Childhood and Youth.txt
+Documento:  William Butler Yeats___Responsibilities.txt
+----------------------------------------------------------------------------------------------------
+Tiempo final:  729.0371828079224

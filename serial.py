@@ -162,15 +162,15 @@ def kMeans(fdt,X, K, maxIters=6, plot_progress=None):
     for i in C:
         group[i].append(listFiles[cont])
         cont+=1
-    print(C)
-    print(np.array(centroids))
+    #print(C)
+    #print(np.array(centroids))
     return np.array(centroids), C, group
 
 # El main, se encarga de llamar a todos los metodos y por último imprimir su resultados.
 if __name__ == '__main__':
     timeini = time.time()
     # K, el numero de grupos en los que quiero dividir los documentos.
-    k = 2
+    k = 10
     rootDir = sys.argv[1]
     ocurrenceFile = getOcurrence(rootDir)
     # Dict con el nombre del documento y la ocurrecncia de palabras.

@@ -186,7 +186,7 @@ def Kmeans(matrizFinal,k,maxIters = 10,):
 
 if __name__ == '__main__':
     timeini = time.time()
-    k = 2
+    k = 10
     rootDir = sys.argv[1]
     T = []
     Ttemp=[]
@@ -236,7 +236,7 @@ if __name__ == '__main__':
         for i in range(k):
             group.insert(i,[])
         listaFiles=list(fdt.keys())
-        print(listaFiles[0])
+        #print(listaFiles[0])
         cont=0;
         for i in C:
             group[int(i)].append(listaFiles[cont])
