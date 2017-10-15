@@ -126,8 +126,8 @@ def preJaccard(fdt):
 
     return matrixC
 
-# Obtiene la suma del mínimo y del máximo de las ocurrncias de las palabras en dos documentos
-# hace una división entre el sumMin y el sumMax
+# Obtiene la suma del mínimo y del máximo de las ocurrncias de las palabras en dos documentos,
+# luego hace una división entre el sumMin y el sumMax
 def jaccard(x, y):
     sumMin=0
     sumMax=0
@@ -163,8 +163,6 @@ if __name__ == '__main__':
     rootDir = sys.argv[1]
     ocurrenceFile = getOcurrence(rootDir)
     fdt = ft(ocurrenceFile)
-    #print("FDT: ", fdt)
-
     matrizJaccard = preJaccard(fdt)
 
     centroides, finalList, grupo = kMeans(fdt,matrizJaccard, k)
