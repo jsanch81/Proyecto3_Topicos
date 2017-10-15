@@ -1,15 +1,9 @@
 # Proyecto 3
 
 ## Autores
-<<<<<<< HEAD
-  *Jose David Sánchez Castrillón* _jsach81@eafit.edu.co_
-
-  *Mayerli Andrea López Galeano* _mlopez12@eafit.edu.co_
-=======
   *Jose David Sánchez Castrillón*   _jsach81@eafit.edu.co_
 
   *Mayerli Andrea López Galeano*    _mlopez12@eafit.edu.co_
->>>>>>> c932f451d50f499136692f37bd710065b7974bab
 
 ## Créditos
 
@@ -33,7 +27,7 @@
   $ sudo apt-get install python3-numpy
   ```
   ### slurm
-  Es un sitema de gestion de recursos. 
+  Es un sitema de gestion de recursos.
   ```
   $ sudo apt-get install slurm
   ```
@@ -91,7 +85,7 @@ Y al final se ejecuta el siguiente comando en la terminal.*
 
 `sbatch ./name_script.sh`
 
-##Funcionalidad del codigo
+## Funcionalidad del codigo
 
 *La principal funcionalidad de este código consiste en minería de textos,
 lo cual es relacionar un documento con otros que sean parecidos, o hablen del
