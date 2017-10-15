@@ -62,65 +62,73 @@ stopwordsman = ["a", "able", "about", "above", "according", "accordingly", "acro
                 "with", "within", "without", "wonder", "would", "would", "x", "y", "yes", "yet", "you", "your",
                 "yours", "yourself", "yourselves", "z", "zero"]
 
+# Obtiene la suma del mínimo y del máximo de las ocurrncias de las palabras en dos documentos,
+# luego hace una división entre el sumMin y el sumMax
 def jaccard(x, y):
-    summin=0
-    summax=0
+    sumMin=0
+    sumMax=0
     for i in range(len(x)):
-        summin+=min(x[i],y[i])
-        summax+=max(x[i],y[i])
-    return summin/summax
+        sumMin+=min(x[i],y[i])
+        sumMax+=max(x[i],y[i])
+    return sumMin/sumMax
 
-def getT(v):
-    leidos = []
-    finalwords = {}
+def getOcurrence(v):
+    #leidos = []
+    #finalwords = {}
     toSend = []
     for i in range(comm.rank, len(v), comm.size):
         #print("RANK: ", comm.rank, v[i])
         file = open(rootDir + v[i], 'r')
-        mainwords = []
+        ocurrenceWords = []
         for line in file:
             line = patron.sub(" ",line.strip().lower())
             for word in line.split():
                 if word not in stopwordsman:
-                    mainwords.append(word)
+                    ocurrenceWords.append(word)
         file.close()
-        sorted_mainwords = collections.Counter(mainwords).most_common(10)
-
+        sorted_ocurrenceWords = collections.Counter(ocurrenceWords).most_common(10)
         for i in range(10):
-            toSend.append(sorted_mainwords[i][0])
+            toSend.append(sorted_ocurrenceWords[i][0])
 
     return toSend
 
-def ft(w,v):
-    frecuencia = {}
+# Se crea un diccionario el cual contendrá el nombre de los documentos con las ocurrencia de
+# las palabras más frecuentes.
+def ft(ocurrenceFile,v):
+    dictionary = {}
     for i in range(comm.rank, len(v), comm.size):
-        result = []
-        for j in range(len(w)):
-            result.append(0)
+        arrOcurrence = []
+        for j in range(len(ocurrenceFile)):
+            arrOcurrence.append(0)
 
         file = open(rootDir + v[i], 'r')
         for line in file:
             line = patron.sub(" ",line.strip().lower())
             for word in line.split():
-                #word = patron.sub("",word.strip().lower())
-                if word in w:
-                    result[w.index(word)] += 1
+                if word in ocurrenceFile:
+                    arrOcurrence[ocurrenceFile.index(word)] += 1
+        # Guarda el nombre del documento como la key y el array de las ocurrencias como el value.
+        dictionary[v[i]] = arrOcurrence
 
-        frecuencia[v[i]] = result
+    return dictionary
 
-    return frecuencia
-
+# Crea una matriz con el tamaño del diccionario de las ocurrencias de las palabras
+# la cual va llenando con la resta entre 1.0 y el resultado que me arroja el jaccard
+#
 def preJaccard(x):
-    tam = len(x)
-    matrixC = np.zeros((tam, tam))
-    listaFiles = list(x.keys())
-    #print("listaFiles: ",listaFiles)
+    sizeDict = len(x)
+    matrixC = np.zeros((sizeDict, sizeDict))
+    listFiles = list(x.keys())
     for i in range(comm.rank, len(x), comm.size):
-        for j in range(tam):
-            matrixC[i][j] = 1.0 - (jaccard(x[listaFiles[i]], x[listaFiles[j]]))
+        for j in range(sizeDict):
+            matrixC[i][j] = 1.0 - (jaccard(x[listFiles[i]], x[listFiles[j]]))
 
     return matrixC
 
+# Retorna un array con los centrosides dependiendo del K recibida,
+# un array con los gurpos y otro con los nombres de los documentos
+# en su respectivo grupo.
+# Este código fue implementado gracias a ......
 def Kmeans(matrizFinal,k,maxIters = 10,):
     C = []
     centroids = []
@@ -164,8 +172,6 @@ def Kmeans(matrizFinal,k,maxIters = 10,):
             #print("promedio: ", promedioArr, "RANK", comm.rank)
             centroidesTemp[i]=list(promedioArr)
         #print("CENTRO", centroidesTemp, "RANK",comm.rank)
-
-
         recibZ = comm.gather(centroidesTemp,root)
         centroidesFinales = []
         for j in range(k):
@@ -200,7 +206,7 @@ if __name__ == '__main__':
     fileList = comm.bcast(fileListTemp, root)
 
 
-    Ttemp = comm.gather(getT(fileList),root)
+    Ttemp = comm.gather(getOcurrence(fileList),root)
     tFinal = []
     if comm.rank == 0:
         for i in range(len(Ttemp)):
@@ -225,24 +231,24 @@ if __name__ == '__main__':
     #print(matrizFinal)
 
     centroides,C= Kmeans(matrizFinal,k)
-    grupo=[]
+    group=[]
     if comm.rank==0:
         for i in range(k):
-            grupo.insert(i,[])
+            group.insert(i,[])
         listaFiles=list(fdt.keys())
         print(listaFiles[0])
         cont=0;
         for i in C:
-            grupo[int(i)].append(listaFiles[cont])
+            group[int(i)].append(listaFiles[cont])
             cont+=1
         #print(C)
         finalTime=time.time()-timeini
         cont=0
-        for i in grupo:
+        for i in group:
             print("Closter numero ",cont,":")
             for j in i:
                 print("Documento: ",j)
             print("--"*50)
             cont+=1
-        #print(grupo)
+        #print(group)
         print("Tiempo final: ", finalTime)

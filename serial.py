@@ -120,17 +120,17 @@ def ft(ocurrenceFile):
 # la cual va llenando con la resta entre 1.0 y el resultado que me arroja el jaccard
 #
 def preJaccard(fdt):
-    sizaDict = len(fdt)
-    matrixC = np.empty((sizaDict, sizaDict))
+    sizeDict = len(fdt)
+    matrixC = np.empty((sizeDict, sizeDict))
     listFiles = list(fdt.keys())
-    for i in range(sizaDict):
-        for j in range(sizaDict):
+    for i in range(sizeDict):
+        for j in range(sizeDict):
             matrixC[i][j] = 1.0 - (jaccard(fdt[listFiles[i]], fdt[listFiles[j]]))
 
     return matrixC
 
 # Obtiene la suma del mínimo y del máximo de las ocurrncias de las palabras en dos documentos,
-# luego hace una división entre el sumMin y el sumMax
+# luego hace una división entre el sumMin y el sumMax.
 def jaccard(x, y):
     sumMin=0
     sumMax=0
@@ -144,7 +144,7 @@ def jaccard(x, y):
 # en su respectivo grupo.
 # Este código fue implementado gracias a ......
 def kMeans(fdt,X, K, maxIters=6, plot_progress=None):
-    grupo = []
+    group = []
     # Elige toda una fila de la respectiva matriz X, la cual será un centroids.
     centroids = X[np.random.choice(np.arange(len(X)), K), :]
     for i in range(maxIters):
@@ -155,16 +155,16 @@ def kMeans(fdt,X, K, maxIters=6, plot_progress=None):
         centroids = [X[C == k].mean(axis=0) for k in range(K)]
     #inicializo un arreglo de arreglos con K arreglos.
     for i in range(K):
-        grupo.insert(i,[])
+        group.insert(i,[])
     listFiles=list(fdt.keys())
     cont=0
     # Se añade el nombre del documento al grupo que le corresponde.
     for i in C:
-        grupo[i].append(listFiles[cont])
+        group[i].append(listFiles[cont])
         cont+=1
     print(C)
     print(np.array(centroids))
-    return np.array(centroids), C, grupo
+    return np.array(centroids), C, group
 
 # El main, se encarga de llamar a todos los metodos y por último imprimir su resultados.
 if __name__ == '__main__':
@@ -178,11 +178,11 @@ if __name__ == '__main__':
     # Matriz que contiene la distacia entre los documentos.
     matrizJaccard = preJaccard(fdt)
     # Los centroides, el array de los gurpos y de los grupos con su nombre.
-    centroides, finalList, grupo = kMeans(fdt,matrizJaccard, k)
+    centroides, finalList, group = kMeans(fdt,matrizJaccard, k)
     finalTime= time.time() - timeini
     # Imprime los resultados.
     cont=0
-    for i in grupo:
+    for i in group:
         print("Closter numero ",cont,":")
         for j in i:
             print("Documento: ",j)
