@@ -62,8 +62,8 @@ stopwordsman = ["a", "able", "about", "above", "according", "accordingly", "acro
                 "with", "within", "without", "wonder", "would", "would", "x", "y", "yes", "yet", "you", "your",
                 "yours", "yourself", "yourselves", "z", "zero"]
 
-# Obtiene la suma del mínimo y del máximo de las ocurrncias de las palabras en dos documentos,
-# luego hace una división entre el sumMin y el sumMax
+# Obtiene la suma del minimo y del maximo de las ocurrncias de las palabras en dos documentos,
+# luego hace una division entre el sumMin y el sumMax
 def jaccard(x, y):
     sumMin=0
     sumMax=0
@@ -92,8 +92,8 @@ def getOcurrence(v):
 
     return toSend
 
-# Se crea un diccionario el cual contendrá el nombre de los documentos con las ocurrencia de
-# las palabras más frecuentes.
+# Se crea un diccionario el cual contendra el nombre de los documentos con las ocurrencia de
+# las palabras mas frecuentes.
 def ft(ocurrenceFile,v):
     dictionary = {}
     for i in range(comm.rank, len(v), comm.size):
@@ -112,7 +112,7 @@ def ft(ocurrenceFile,v):
 
     return dictionary
 
-# Crea una matriz con el tamaño del diccionario de las ocurrencias de las palabras
+# Crea una matriz con el tamano del diccionario de las ocurrencias de las palabras
 # la cual va llenando con la resta entre 1.0 y el resultado que me arroja el jaccard
 #
 def preJaccard(x):
@@ -128,7 +128,7 @@ def preJaccard(x):
 # Retorna un array con los centrosides dependiendo del K recibida,
 # un array con los gurpos y otro con los nombres de los documentos
 # en su respectivo grupo.
-# Este código fue implementado gracias a ......
+# Este codigo fue implementado gracias a ......
 def Kmeans(matrizFinal,k,maxIters = 10,):
     C = []
     centroids = []
