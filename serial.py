@@ -57,7 +57,7 @@ stopwordsman = ["a", "able", "about", "above", "according", "accordingly", "acro
                  "with", "within", "without", "wonder", "would", "would", "x", "y", "yes", "yet", "you", "your",
                  "yours", "yourself", "yourselves", "z", "zero","ii"]
 
-# El método retorna un diccionario con las palabras y la ocurrencia de estas, eliminando
+# El metodo retorna un diccionario con las palabras y la ocurrencia de estas, eliminando
 # las palabras que no son importantes.
 # El diccionario contienen las palabras de todos los documentos.
 def getOcurrence(rootDir):
@@ -78,19 +78,19 @@ def getOcurrence(rootDir):
                 if word not in stopwordsman:
                     ocurrenceWords.append(word)
         file.close()
-        # Se obtienen una tupla con las palabras más frecuentes.
+        # Se obtienen una tupla con las palabras mas frecuentes.
         sorted_ocurrenceWords = collections.Counter(ocurrenceWords).most_common(10)
         frequentWords =[]
         for i in range(10):
-            # Se obtiene las palabras más frecuentes.
+            # Se obtiene las palabras mas frecuentes.
             frequentWords.append(sorted_ocurrenceWords[i][0])
         #Se hace la union entre todos los elementos para evitar repetir.
         ocurrenceFile = list(set(ocurrenceFile).union(set(frequentWords)))
     return ocurrenceFile
 
 # Devuelve dictionary con los resultados de ft(d,t)
-# Se crea un diccionario el cual contendrá el nombre de los documentos con las ocurrencia de
-# las palabras más frecuentes.
+# Se crea un diccionario el cual contendra el nombre de los documentos con las ocurrencia de
+# las palabras mas frecuentes.
 def ft(ocurrenceFile):
     dictionary = {}
     dictFiles={}
@@ -104,7 +104,7 @@ def ft(ocurrenceFile):
         arrOcurrence = []
         for i in range(len(ocurrenceFile)):
             arrOcurrence.append(0)
-        # Lee el documento por orden de tamaño.
+        # Lee el documento por orden de tamano.
         file = open(rootDir + dictFiles[sort[cont]], 'r')
         for line in file:
             line = patron.sub(" ",line.strip().lower())
@@ -116,7 +116,7 @@ def ft(ocurrenceFile):
 
     return dictionary
 
-# Crea una matriz con el tamaño del diccionario de las ocurrencias de las palabras
+# Crea una matriz con el tamano del diccionario de las ocurrencias de las palabras
 # la cual va llenando con la resta entre 1.0 y el resultado que me arroja el jaccard
 #
 def preJaccard(fdt):
@@ -129,24 +129,25 @@ def preJaccard(fdt):
 
     return matrixC
 
-# Obtiene la suma del mínimo y del máximo de las ocurrncias de las palabras en dos documentos,
-# luego hace una división entre el sumMin y el sumMax.
+# Obtiene la suma del minimo y del maximo de las ocurrncias de las palabras en dos documentos,
+# luego hace una division entre el sumMin y el sumMax.
 def jaccard(x, y):
     sumMin=0
     sumMax=0
     for i in range(len(x)):
         sumMin+=min(x[i],y[i])
         sumMax+=max(x[i],y[i])
-    return sumMin/sumMax
+    resultado=float(sumMin)/float(sumMax)
 
 # Retorna un array con los centrosides dependiendo del K recibida,
 # un array con los gurpos y otro con los nombres de los documentos
 # en su respectivo grupo.
-# Este código fue implementado gracias a ......
+# Este codigo fue implementado gracias a ......
 def kMeans(fdt,X, K, maxIters=6, plot_progress=None):
     group = []
-    # Elige toda una fila de la respectiva matriz X, la cual será un centroids.
+    # Elige toda una fila de la respectiva matriz X, la cual sera un centroids.
     centroids = X[np.random.choice(np.arange(len(X)), K), :]
+    #print(centroids)
     for i in range(maxIters):
         # Esta parte asigna el closter o el grupo al que pertenece cada documento.
         C = np.array([np.argmin([np.dot(x_i - y_k, x_i - y_k) for y_k in centroids]) for x_i in X])
@@ -158,7 +159,7 @@ def kMeans(fdt,X, K, maxIters=6, plot_progress=None):
         group.insert(i,[])
     listFiles=list(fdt.keys())
     cont=0
-    # Se añade el nombre del documento al grupo que le corresponde.
+    # Se anade el nombre del documento al grupo que le corresponde.
     for i in C:
         group[i].append(listFiles[cont])
         cont+=1
@@ -166,7 +167,7 @@ def kMeans(fdt,X, K, maxIters=6, plot_progress=None):
     #print(np.array(centroids))
     return np.array(centroids), C, group
 
-# El main, se encarga de llamar a todos los metodos y por último imprimir su resultados.
+# El main, se encarga de llamar a todos los metodos y por ultimo imprimir su resultados.
 if __name__ == '__main__':
     timeini = time.time()
     # K, el numero de grupos en los que quiero dividir los documentos.

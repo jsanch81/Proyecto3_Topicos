@@ -70,7 +70,7 @@ def jaccard(x, y):
     for i in range(len(x)):
         sumMin+=min(x[i],y[i])
         sumMax+=max(x[i],y[i])
-    return sumMin/sumMax
+    return float(sumMin)/float(sumMax)
 
 def getOcurrence(v):
     #leidos = []
