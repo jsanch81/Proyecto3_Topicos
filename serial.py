@@ -138,7 +138,7 @@ def jaccard(x, y):
         sumMin+=min(x[i],y[i])
         sumMax+=max(x[i],y[i])
     resultado=float(sumMin)/float(sumMax)
-
+    return resultado
 # Retorna un array con los centrosides dependiendo del K recibida,
 # un array con los gurpos y otro con los nombres de los documentos
 # en su respectivo grupo.
