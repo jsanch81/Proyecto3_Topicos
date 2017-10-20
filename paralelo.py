@@ -137,15 +137,15 @@ def Kmeans(matrizFinal,k,maxIters = 10,):
 
     for i in range(maxIters):
 
-        mJack = comm.bcast(matrizFinal,root)
+        #mJack = comm.bcast(matrizFinal,root)
         cent = comm.bcast(centroids, root)
-        tam2 = len(mJack)
+        tam2 = len(matrizFinal)
         argminList = np.zeros(tam2)
 
-        for i in range(comm.rank, len(mJack), comm.size):
+        for i in range(comm.rank, len(matrizFinal), comm.size):
             dotList = []
             for y_k in cent:
-                dotList.append(np.dot(mJack[i] - y_k, mJack[i] - y_k))
+                dotList.append(np.dot(matrizFinal[i] - y_k, matrizFinal[i] - y_k))
             #print("DOTLIST", dotList)
             argminList[i] = np.argmin(dotList)
         #print("ARGMING" , argminList)
@@ -167,7 +167,7 @@ def Kmeans(matrizFinal,k,maxIters = 10,):
         #print("CENTMP", centroidesTemp)
         for i in range(comm.rank, k, comm.size):
             truefalseArr = z == i
-            propiosKArr = mJack[truefalseArr]
+            propiosKArr = matrizFinal[truefalseArr]
             promedioArr = propiosKArr.mean(axis=0)
             #print("promedio: ", promedioArr, "RANK", comm.rank)
             centroidesTemp[i]=list(promedioArr)
@@ -186,7 +186,7 @@ def Kmeans(matrizFinal,k,maxIters = 10,):
 
 if __name__ == '__main__':
     timeini = time.time()
-    k = 10
+    k = 2
     rootDir = sys.argv[1]
     T = []
     Ttemp=[]
