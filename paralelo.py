@@ -73,11 +73,8 @@ def jaccard(x, y):
     return float(sumMin)/float(sumMax)
 
 def getOcurrence(v):
-    #leidos = []
-    #finalwords = {}
     toSend = []
     for i in range(comm.rank, len(v), comm.size):
-        #print("RANK: ", comm.rank, v[i])
         file = open(rootDir + v[i], 'r')
         ocurrenceWords = []
         for line in file:
@@ -137,7 +134,6 @@ def Kmeans(matrizFinal,k,maxIters = 10,):
 
     for i in range(maxIters):
 
-        #mJack = comm.bcast(matrizFinal,root)
         cent = comm.bcast(centroids, root)
         tam2 = len(matrizFinal)
         argminList = np.zeros(tam2)
@@ -146,17 +142,13 @@ def Kmeans(matrizFinal,k,maxIters = 10,):
             dotList = []
             for y_k in cent:
                 dotList.append(np.dot(matrizFinal[i] - y_k, matrizFinal[i] - y_k))
-            #print("DOTLIST", dotList)
             argminList[i] = np.argmin(dotList)
-        #print("ARGMING" , argminList)
         recibC = comm.gather(argminList, root)
-        #print("RECIBC"+str(recibC[0]))
         cFinal = []
         if comm.rank == 0:
             cFinal = np.zeros(len(recibC[0]))
             for li in range(len(recibC)):
                 cFinal += recibC[li]
-            #print("CFINAL", cFinal)
 
         z = comm.bcast(cFinal,root)
 
@@ -164,20 +156,16 @@ def Kmeans(matrizFinal,k,maxIters = 10,):
         for i in range(k):
             centroidesTemp.insert(i, [])
 
-        #print("CENTMP", centroidesTemp)
         for i in range(comm.rank, k, comm.size):
             truefalseArr = z == i
             propiosKArr = matrizFinal[truefalseArr]
             promedioArr = propiosKArr.mean(axis=0)
-            #print("promedio: ", promedioArr, "RANK", comm.rank)
             centroidesTemp[i]=list(promedioArr)
-        #print("CENTRO", centroidesTemp, "RANK",comm.rank)
         recibZ = comm.gather(centroidesTemp,root)
         centroidesFinales = []
         for j in range(k):
             centroidesFinales.append([])
         if comm.rank == 0:
-            #print("FINAL", recibZ)
             for i in range(len(recibZ)):
                 for j in range(len(recibZ[i])):
                     centroidesFinales[j] += recibZ[i][j]
@@ -201,7 +189,6 @@ if __name__ == '__main__':
         del fileListTemp [:]
         for i in sort:
             fileListTemp.append(mapFiles[i])
-        #print("organizado: ",fileListTemp)
 
     fileList = comm.bcast(fileListTemp, root)
 
@@ -212,7 +199,6 @@ if __name__ == '__main__':
         for i in range(len(Ttemp)):
             tFinal.extend([element for element in Ttemp[i] if element not in tFinal])
     T=comm.bcast(tFinal, root)
-    #print(T)
 
     fdtTemp=comm.gather(ft(T,fileList),root)
     mapaFinal={}
@@ -220,7 +206,6 @@ if __name__ == '__main__':
         for i in range(len(fdtTemp)):
             mapaFinal.update(fdtTemp[i])
     fdt=comm.bcast(mapaFinal, root)
-    #print(fdt)
 
     matriz=comm.gather(preJaccard(fdt), root)
     matrizFinalTemp=0
@@ -228,7 +213,6 @@ if __name__ == '__main__':
         for matrix in matriz:
             matrizFinalTemp += matrix
     matrizFinal=comm.bcast(matrizFinalTemp, root)
-    #print(matrizFinal)
 
     centroides,C= Kmeans(matrizFinal,k)
     group=[]
@@ -236,12 +220,10 @@ if __name__ == '__main__':
         for i in range(k):
             group.insert(i,[])
         listaFiles=list(fdt.keys())
-        #print(listaFiles[0])
         cont=0;
         for i in C:
             group[int(i)].append(listaFiles[cont])
             cont+=1
-        #print(C)
         finalTime=time.time()-timeini
         cont=0
         for i in group:
@@ -250,5 +232,4 @@ if __name__ == '__main__':
                 print("Documento: ",j)
             print("--"*50)
             cont+=1
-        #print(group)
         print("Tiempo final: ", finalTime)
